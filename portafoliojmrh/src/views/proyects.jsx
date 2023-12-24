@@ -13,7 +13,7 @@ function Proyects () {
               <a href="https://project2.com" className="list-group-item list-group-item-action">
                 Project 2
               </a>
-              {/* Add more project links as needed */}
+              
             </div>
           </div>
         </div>
