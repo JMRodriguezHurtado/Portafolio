@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import CNDHcertificate from '../assets/CNDHcertificate.png'; 
 import CV from '../assets/CV.png';
 import henrycertificate from '../assets/henrycertificate.png';
+import tituloedit from '../assets/tituloedit.jpg';
 
 function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -51,6 +52,13 @@ function Home() {
                 className="d-block w-100"
                 src={CV}
                 alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item onClick={() => openModal(tituloedit)}>
+              <img
+                className="d-block w-100"
+                src={tituloedit}
+                alt="Fourth slide"
               />
             </Carousel.Item>
           </Carousel>
