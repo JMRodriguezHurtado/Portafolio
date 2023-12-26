@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import CNDHcertificate from '../../public/assets/CNDHcertificate.png'; 
-import CV from '../../public/assets/CV.png';
-import henrycertificate from '../../public/assets/henrycertificate.png';
-import tituloedit from '../../public/assets/tituloedit.jpg';
+import CNDHcertificate from '/assets/CNDHcertificate.png'; 
+import CV from '/assets/CV.png';
+import henrycertificate from '/assets/henrycertificate.png';
+import tituloedit from '/assets/tituloedit.jpg';
 
 function Home() {
   const [showModal, setShowModal] = useState(false);

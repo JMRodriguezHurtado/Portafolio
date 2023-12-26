@@ -7,7 +7,7 @@ import Proyects from './views/proyects';
 import About from './views/about';
 import NavBar from './components/NavBar';
 import Skills from './views/skills';
-import nightSkyImage from '../public/assets/night-sky-Milky-Way-Galaxy.webp';
+import nightSkyImage from '/assets/night-sky-Milky-Way-Galaxy.webp';
 
 function App() {
   return (
