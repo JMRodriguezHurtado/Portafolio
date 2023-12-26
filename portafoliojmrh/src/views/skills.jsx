@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import react2 from '../assets/react2.svg';
-import javascript from '../assets/javascript.svg';
-import mongodb from '../assets/mongodb.svg';
-import nodejs from '../assets/nodejs.svg';
-import oracle from '../assets/oracle.svg';
-import postgresql from '../assets/postgresql.svg';
-import typescript from '../assets/typescript.svg';
-import vue from '../assets/vue.svg';
+import react2 from '../../public/assets/react2.svg';
+import javascript from '../../public/assets/javascript.svg';
+import mongodb from '../../public/assets/mongodb.svg';
+import nodejs from '../../public/assets/nodejs.svg';
+import oracle from '../../public/assets/oracle.svg';
+import postgresql from '../../public/assets/postgresql.svg';
+import typescript from '../../public/assets/typescript.svg';
+import vue from '../../public/assets/vue.svg';
 
 
 function Skills() {
