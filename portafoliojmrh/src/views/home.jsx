@@ -26,7 +26,7 @@ function Home() {
     <div className="container">
       <div className="row">
         <div className="col-md-6">
-          <h1 className='text-white'>JMRH</h1>
+          <h1 className='text-white text-center'>JMRH</h1>
           <p className="lead text-white">Hello! I'm a FullStack Developer with a passion for blending technology and creativity. My interests extend beyond coding – I have a knack for science, a love for all things fantasy, and a deep appreciation for the world of entertainment. Let's create something amazing together!</p>
         </div>
         </div>
@@ -35,28 +35,28 @@ function Home() {
           <Carousel className='aspect-ratio'>
             <Carousel.Item onClick={() => openModal(henrycertificate)}>
               <img
-                className="d-block h-100 w-100 aspect-ratio"
+                className="flex h-100 w-100 aspect-ratio"
                 src={henrycertificate}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item onClick={() => openModal(CNDHcertificate)}>
               <img
-                className="d-block h-100 w-100 aspect-ratio"
+                className="flex h-100 w-100 aspect-ratio"
                 src={CNDHcertificate}
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item onClick={() => openModal(CV)}>
               <img
-                className="d-block h-100 w-100 aspect-ratio"
+                className="flex h-100 w-100 aspect-ratio"
                 src={CV}
                 alt="Third slide"
               />
             </Carousel.Item>
             <Carousel.Item onClick={() => openModal(tituloedit)}>
               <img
-                className="d-block h-100 w-100 aspect-ratio"
+                className="flex h-100 w-100 aspect-ratio"
                 src={tituloedit}
                 alt="Fourth slide"
               />

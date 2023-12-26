@@ -6,6 +6,7 @@ import Home from './views/home';
 import Proyects from './views/proyects';
 import About from './views/about';
 import NavBar from './components/NavBar';
+import Skills from './views/skills';
 import nightSkyImage from './assets/night-sky-Milky-Way-Galaxy.webp';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/proyects' element={<Proyects />} />
+        <Route path='/skills' element={<Skills />} />
       </Routes>
     </div>
   </Router>
