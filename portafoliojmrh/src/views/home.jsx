@@ -32,31 +32,31 @@ function Home() {
         </div>
         <div className='row'>
         <div className="col-md-6">
-          <Carousel>
+          <Carousel className='aspect-ratio'>
             <Carousel.Item onClick={() => openModal(henrycertificate)}>
               <img
-                className="d-block w-100"
+                className="d-block h-100 w-100 aspect-ratio"
                 src={henrycertificate}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item onClick={() => openModal(CNDHcertificate)}>
               <img
-                className="d-block w-100"
+                className="d-block h-100 w-100 aspect-ratio"
                 src={CNDHcertificate}
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item onClick={() => openModal(CV)}>
               <img
-                className="d-block w-100"
+                className="d-block h-100 w-100 aspect-ratio"
                 src={CV}
                 alt="Third slide"
               />
             </Carousel.Item>
             <Carousel.Item onClick={() => openModal(tituloedit)}>
               <img
-                className="d-block w-100"
+                className="d-block h-100 w-100 aspect-ratio"
                 src={tituloedit}
                 alt="Fourth slide"
               />
@@ -65,7 +65,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Image Modal */}
       <Modal show={showModal} onHide={closeModal} size="lg">
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
