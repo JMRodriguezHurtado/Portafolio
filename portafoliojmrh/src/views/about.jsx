@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import JMRH from '/assets/JMRH.jpg';
+import JMRH from '../../public/assets/JMRH.jpg';
 
 function About() {
   return (

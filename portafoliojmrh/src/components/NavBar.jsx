@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { Link } from 'react-router-dom';
-import homeIcon2 from "/assets/homeIcon2.png"
+import homeIcon2 from "../../public/assets/homeIcon2.png"
 
 function NavBar() { 
   return (
