@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Footer from '../components/Footer';
 import CNDHcertificate from '../../public/assets/CNDHcertificate.png'; 
 import CV from '../../public/assets/CV.png';
 import henrycertificate from '../../public/assets/henrycertificate.png';
@@ -82,6 +83,7 @@ function Home() {
           </Button>
         </Modal.Footer>
       </Modal>
+      <Footer />
     </div>
   );
 }
