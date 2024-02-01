@@ -5,7 +5,6 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Footer from '../components/Footer';
 import CNDHcertificate from '../../public/assets/CNDHcertificate.png'; 
-import CV from '../../public/assets/CV.png';
 import henrycertificate from '../../public/assets/henrycertificate.png';
 import tituloedit from '../../public/assets/tituloedit.jpg';
 import HenryCert from '../../public/assets/HenryCert.png';
@@ -15,6 +14,14 @@ import EFCERT2 from '../../public/assets/EFCERT2.png';
 function Home() {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [downloadLink, setDownloadLink] = useState(null);
+
+  const handleDownload = () => {
+    
+    const pdfPath = '/JMRHCV.pdf';
+    setDownloadLink(pdfPath);
+    window.open(pdfPath, '_blank');
+  };
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -30,7 +37,7 @@ function Home() {
     <div className="container">
       
         <div className="col-md-6">
-          <h1 className='text-white text-center'>JMRH</h1>
+          <h1 className='text-white text-center'>Juan Manuel Rodriguez Hurtado</h1>
           <p className="lead text-white">Hello! I'm a FullStack Developer with a passion for blending technology and creativity. My interests extend beyond coding – I have a knack for science, a love for all things fantasy, and a deep appreciation for the world of entertainment. Let's create something amazing together!</p>
 
           <Carousel className='aspect-ratio'>
@@ -70,13 +77,6 @@ function Home() {
                 alt="Second slide"
               />
             </Carousel.Item>
-            <Carousel.Item onClick={() => openModal(CV)}>
-              <img
-                className="flex h-100 w-100 aspect-ratio"
-                src={CV}
-                alt="Third slide"
-              />
-            </Carousel.Item>
             <Carousel.Item onClick={() => openModal(tituloedit)}>
               <img
                 className="flex h-100 w-100 aspect-ratio"
@@ -85,7 +85,9 @@ function Home() {
               />
             </Carousel.Item>
           </Carousel>
-        
+          <Button variant="primary" onClick={handleDownload}>
+        Download CV
+      </Button>
       </div>
 
       <Modal show={showModal} onHide={closeModal} size="lg">
@@ -103,7 +105,12 @@ function Home() {
           <Button variant="secondary" onClick={closeModal}>
             Close
           </Button>
-        </Modal.Footer>
+          {downloadLink && (
+      <Button variant="primary" onClick={() => window.open(downloadLink, '_blank')}>
+        Download CV
+      </Button>
+    )}
+  </Modal.Footer>
       </Modal>
       <Footer />
     </div>

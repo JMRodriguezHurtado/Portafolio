@@ -7,6 +7,11 @@ function NavBar() {
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
+  const handleDownloadCV = () => {
+    const pdfPath = '/JMRHCV.pdf';
+    window.open(pdfPath, '_blank');
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -35,6 +40,13 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/skills">Skills</Link>
+            </li>
+          </ul>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <button className="btn btn-primary" onClick={handleDownloadCV}>
+                Download CV
+              </button>
             </li>
           </ul>
         </div>

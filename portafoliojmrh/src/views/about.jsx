@@ -17,7 +17,7 @@ function About() {
 
           With an unwavering commitment to continuous learning and a strong foundation in both education and programming, Juan Manuel Rodriguez Hurtado is poised to make significant strides as a full-stack developer, bringing a unique blend of skills, dedication, and innovation to the forefront of the programming domain.
         </p>
-        <img src={JMRH} alt='JMRH' className='img-fluid w-50 mx-auto'/>
+        <img src={JMRH} alt='JMRH' className='img-fluid w-25 h-50 mx-auto'/>
       </div>
     </div>
   );
