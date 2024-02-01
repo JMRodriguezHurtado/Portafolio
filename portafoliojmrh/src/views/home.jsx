@@ -9,6 +9,8 @@ import CV from '../../public/assets/CV.png';
 import henrycertificate from '../../public/assets/henrycertificate.png';
 import tituloedit from '../../public/assets/tituloedit.jpg';
 import HenryCert from '../../public/assets/HenryCert.png';
+import EFCERT from '../../public/assets/EFCERT.png';
+import EFCERT2 from '../../public/assets/EFCERT2.png';
 
 function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -45,6 +47,20 @@ function Home() {
                 className="flex h-100 w-100 aspect-ratio"
                 src={henrycertificate}
                 alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item onClick={() => openModal(EFCERT)}>
+              <img
+                className="flex h-100 w-100 aspect-ratio"
+                src={EFCERT}
+                alt="Secondish slide"
+              />
+              </Carousel.Item>
+              <Carousel.Item onClick={() => openModal(EFCERT2)}>
+              <img
+                className="flex h-100 w-100 aspect-ratio"
+                src={EFCERT2}
+                alt="Secondishly slide"
               />
             </Carousel.Item>
             <Carousel.Item onClick={() => openModal(CNDHcertificate)}>
